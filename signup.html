@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng ký</title>
+    <title> Đăng ký</title>
+    <link rel="stylesheet" href="dinhdang2.css">
 </head>
-<body>
-    <h2> Đăng ký tài khoản </h2>
-    <form>
-        <p> 
-            <label for="ten"> Username: </label>
-            <input id="ten" type="text">
-        </p>
-        <p>
-            <label for="gmail"> Gmail: </label>
-            <input id="gmail" type="text"> 
-        </p>
-        <p>
-            <label for="sdt"> Số điện thoại di động: </label>
-            <input id="sdt" type="text"> 
-        </p>
-        <p>
-            <label for="mk1"> Mật khẩu: </label>
-            <input id="mk1" type="text"> 
-        </p>
-        <p>
-            <label for="mk2"> Xác nhận mật khẩu: </label>
-            <input id="mk2" type="text"> 
-        </p>
-        <p>
-            <fieldset>
+</head>
+
+<body text="white">
+    <div class="container">
+        <form class="form" id="login">
+            <h1 class="form__title">Sign Up</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Username">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Email Address">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Confirm password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <fieldset class="mau">
                 <legend> Ngày sinh </legend>
                 <label for="ngay"> Ngày </label>
                 <select name="" id="ngay"> 
@@ -99,15 +100,20 @@
                     <option value="n09"> 2009 </option>
                 </select>
             </fieldset>
-            <fieldset>
-            <legend> Giới tính </legend>
-            <input type="checkbox" id="nam" name="gt1"> <label for="nam"> Nam </label> 
-            <input type="checkbox" id="nu" name="gt2"> <label for="nu"> Nữ </label> 
-            <input type="checkbox" id="khac" name="gt3"> <label for="khac"> Khác </label> 
+            <fieldset class="mau">
+                <legend>Giới tính:</legend>
+                <input type="checkbox" id="boy" name="boy"><label for="boy">Nam</label>
+                <input type="checkbox" id="nu" name="nu"><label for="nu">Nữ</label>
+                <input type="checkbox" id="3d" name="3d"><label for="3d">Khác</label>
             </fieldset>
-        </p>
-    </form>
-    <p> <a href="market.html"> Đăng ký </a> </p>
-    <p> <a href="index.html"> Go Home! </a> </p>
+            <br>
+            <a href="market.html" class="form__button" type="submit">Sign up</a>
+            <p class="form__text">
+                <a class="form__link" href="signin.html" id="linkLogin">Already have an account? Sign in </a>
+            </p>
+        </form>
+    </div>
+
 </body>
+
 </html>
