@@ -1,0 +1,93 @@
+html {
+    background-image: url(../images/mau-background-cuc-dep_110638631.jpg);
+    background-size: cover;
+    text-decoration: none;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: deepskyblue;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: red;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 165%;
+}
+
+.st {
+    color: red;
+    text-align: center;
+    text-decoration: none;
+}
+
+.container-area {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.main-area {
+    width: 33%;
+    float: left;
+    padding: 40px;
+    padding-top: 0px;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    width: 33%;
+    float: left;
+    background-color: deepskyblue;
+    padding: 40px;
+    padding-top: 0px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+footer {
+    text-align: center;
+    text-decoration: none;
+    +font-size: 20px;
+    color: black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.fix {
+    clear: both;
+}
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+}
